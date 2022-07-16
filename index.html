@@ -19,9 +19,6 @@
         <li class="nav-item">
           <a class="nav-link" href="#difusores">AROMAS Y DIFUSORES</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#info">CONTACTO</a>
-          </li>
       </ul>
 
         <h1 class="titulo">𝒱𝑒𝓇𝒷𝑒𝓃𝒶</h1>
@@ -114,51 +111,26 @@
     </section>
 
 <!--contacto e info footer-->
-
-<section class="footer" >
-<footer id="info">
-
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
+    
+ <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Nuestras redes aquí</button>
+    
+ <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+   <div class="offcanvas-header">
+     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Contactate con nosotros</h5>
+     
+     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+   </div>
+   <div class="offcanvas-body">
+    <div class="linksInfoOne">
+     <a href="https://www.instagram.com/verbena_velas_y_aromas/"> Instagram <img src="instagram-gris.png" alt="igTransp" height="20px" width="20px" margin-right="7px"></a>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-  </div>
-
-</footer>
-</section>
+     <div class="linksInfoTwo">
+     <a href="https://wa.me/c/5492494316958">WhatsApp <img src="whatsapp-gris.png" alt="wpTransp" height="20px" width="20px" margin-right="7px"></a>
+     </div>
+   </div>
+ </div>
+ 
+ <!-- End info Code -->
 
 
 </body>
@@ -283,14 +255,8 @@ a {
 }
 
 
-/*info y contacto*/
-
-
-
-
-
 /*fondo animado*/
-body{
+body {
     width: 100%;
     height: 100%;
     background: #ffffff;
@@ -317,5 +283,51 @@ body{
     color: rgba(255, 255, 255, 0);
 }
 
+/*nav footer*/
+
+.offcanvas body {
+  color: rgb(255, 241, 195)
+} 
+
+
+.btn-primary {
+  --bs-btn-color: rgb(0, 0, 0);
+    --bs-btn-bg: #ffeab0;
+    --bs-btn-border-color: #f2ffb7;
+    --bs-btn-hover-color: rgb(0, 0, 0);
+    --bs-btn-hover-bg: #fff080;
+    --bs-btn-hover-border-color: #ffe8af;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ffc897;
+    --bs-btn-active-border-color: #fffda5;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: rgb(255, 255, 255);
+    --bs-btn-disabled-bg: #000000;
+    --bs-btn-disabled-border-color: #ffebbb;
+    color: black;
+    display: flex;
+    text-align: right;
+}
+
+.linksInfoOne {
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.linksInfoTwo {
+  font-size: 15px;
+}
+
+.wpTransp {
+   height: 20px;
+   width: 20px;
+}
+
+button {
+  margin-left: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 </style>
