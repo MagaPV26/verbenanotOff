@@ -18,7 +18,12 @@
       src="https://kit.fontawesome.com/0f410d6aec.js"
       crossorigin="anonymous"
     ></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
@@ -174,7 +179,7 @@
         suscipit laborum itaque.
       </p>
       <section id="difusores">
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem;">
           <img src="horno2.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">
@@ -184,7 +189,7 @@
           </div>
         </div>
 
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem;">
           <img src="difusor4.png" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">
@@ -194,7 +199,7 @@
           </div>
         </div>
 
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem;">
           <img src="aroma2.png" class="card-img-top" alt="..." />
           <div class="card-body">
             <p class="card-text">
@@ -206,25 +211,40 @@
       </section>
     </section>
 
-      <!-- Site footer -->
+    <!-- Site footer -->
 
-<footer>
-<section class="footer">
-  <div class="info">
-    <h6 class="redesInfo">Esta es una página publicitaria, desde aquí solamente se podrán ver algunos de nuestros servicios. En caso de querer encargar algo nuestras redes sociales van a estar disponibles a su servicio, ya que allí nos van a poder comunicar.</h6>
-    <div class="logos">
-      <a href="https://www.instagram.com/verbena_velas_y_aromas/"><img src="instagram-blanco.png" class="logoIg"   width= "25px"
-        height="25px"></a>
-      <a href="https://www.whatsapp.com/"><img src="whatsapp-blanco.png" class="logoWp"  width= "25px"
-        height="25px"></a>
-  </div>
-<p class="credits">This is Verbena. All images are original to the owner of the site and its social networks. Any use of these without permission and/or authorization from the owner will be sued.</p>
-  </div>
-</section>
-</footer>
+    <footer>
+      <section class="footer">
+        <div class="info">
+          <h6 class="redesInfo">
+            Esta es una página publicitaria, desde aquí solamente se podrán ver
+            algunos de nuestros servicios. En caso de querer obtener nuestros
+            productos nuestras redes sociales van a estar disponibles a su
+            servicio para la libre comunicación.
+          </h6>
+          <h6 class="links">Redes</h6>
+          <div class="logos">
+            <a href="https://www.instagram.com/verbena_velas_y_aromas/"
+              ><img
+                src="instagram-blanco.png"
+                class="logoIg"
+                width="25px"
+                height="25px"
+            /></a>
+            <a href="https://www.whatsapp.com/"
+              ><img
+                src="whatsapp-blanco.png"
+                class="logoWp"
+                width="25px"
+                height="25px"
+            /></a>
+          </div>
+          <p class="credits">© Verbena all rights reserved</p>
+        </div>
+      </section>
+    </footer>
 
     <!-- End info Code -->
-
   </body>
 </html>
 
@@ -235,40 +255,58 @@
     font-family: "Montserrat", sans-serif;
   }
 
-    /*contact mood boostrap*/
+  /*contact mood boostrap*/
 
-footer {
-  margin-top: 40px;
-  background-color: rgb(19, 19, 19);
-  color: white;
-}
+  footer {
+    margin-top: 40px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    margin-bottom: 0;
+  }
 
-.logos {
+  .logos {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logoIg {
+    margin-right: 20px;
+  }
+
+  .logoWp {
+    margin-right: 10px;
+  }
+
+.links {
   display: flex;
+  margin-left: 1275px;
+  padding-bottom: 5px;
 }
 
+  .redesInfo {
+    margin-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 350px;
+  }
 
-.redesInfo {
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-right: 300px;
-}
+  .credits {
+    font-display: flex;
+    justify-content: flex-start;
+    text-align: center;
+  }
 
-
-.credits {
-  font-display: flex;
-  justify-content: flex-start;
-  text-align: center;
-}
-
-    /*finish*/    
+  /*finish*/
 
   .h2Ve {
     display: flex;
     justify-content: center;
     margin: 50px;
     margin-top: 60px;
+  }
+
+  p {
+    margin-bottom: 0;
   }
 
   .parrafSizeBig {
@@ -384,7 +422,7 @@ footer {
     flex-wrap: wrap;
     min-width: 350px;
     margin-bottom: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 1rem), 1fr));
   }
 
   th {
@@ -469,12 +507,9 @@ body {
 
   .nav-item {
     color: rgba(255, 255, 255, 0);
-}
-
+  }
 
   /*responsive simple*/
-
-
 </style>
 
 <script>
